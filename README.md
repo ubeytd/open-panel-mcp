@@ -122,3 +122,4 @@ src/
 ## License
 
 MIT
+# open-panel-mcp
