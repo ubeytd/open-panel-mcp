@@ -1,6 +1,6 @@
 {
   "name": "openpanel-mcp-server",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "MCP server for OpenPanel analytics - track events, query analytics, manage profiles. Works with self-hosted and cloud instances.",
   "type": "module",
   "main": "dist/index.js",
