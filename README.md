@@ -92,8 +92,8 @@ Get credentials from your OpenPanel dashboard: **Settings → Projects → Selec
 ## Development
 
 ```bash
-git clone https://github.com/ubeytdemir/openpanel-mcp-server.git
-cd openpanel-mcp-server
+git clone https://github.com/ubeytd/open-panel-mcp.git
+cd open-panel-mcp
 npm install
 npm test        # 42 tests
 npm run build   # compile TypeScript
@@ -122,4 +122,3 @@ src/
 ## License
 
 MIT
-# open-panel-mcp

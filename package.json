@@ -1,6 +1,6 @@
 {
   "name": "openpanel-mcp-server",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "MCP server for OpenPanel analytics - track events, query analytics, manage profiles. Works with self-hosted and cloud instances.",
   "type": "module",
   "main": "dist/index.js",
@@ -43,18 +43,21 @@
   "author": "ubeytdemir",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ubeytdemir/openpanel-mcp-server.git"
+    "url": "git+https://github.com/ubeytd/open-panel-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/ubeytdemir/openpanel-mcp-server/issues"
+    "url": "https://github.com/ubeytd/open-panel-mcp/issues"
   },
-  "homepage": "https://github.com/ubeytdemir/openpanel-mcp-server#readme",
+  "homepage": "https://github.com/ubeytd/open-panel-mcp#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^22.10.0",
+    "semantic-release": "^25.0.3",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vitest": "^3.0.0"
