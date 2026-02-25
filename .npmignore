@@ -1,0 +1,8 @@
+src/
+.claude/
+.gitignore
+.env*
+tsconfig.json
+vitest.config.*
+*.tsbuildinfo
+.DS_Store
