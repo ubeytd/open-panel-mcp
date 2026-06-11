@@ -5,6 +5,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { OpenPanelClient } from "./services/api-client.js";
 import { registerTools } from "./tools/register.js";
 import { DEFAULT_API_URL } from "./constants.js";
+import { handleCliArgs, SERVER_VERSION } from "./cli.js";
 
 function getConfig() {
   const clientId = process.env.OPENPANEL_CLIENT_ID;
@@ -33,7 +34,7 @@ async function main() {
 
   const server = new McpServer({
     name: "openpanel-mcp-server",
-    version: "1.0.0",
+    version: SERVER_VERSION,
   });
 
   registerTools(server, client);
@@ -43,6 +44,8 @@ async function main() {
 
   console.error(`OpenPanel MCP server running (API: ${config.apiUrl})`);
 }
+
+handleCliArgs();
 
 main().catch((error) => {
   console.error("Fatal error:", error);
